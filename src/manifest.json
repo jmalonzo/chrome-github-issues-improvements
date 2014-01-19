@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "Github Issues Improvements",
+  "version": "1.0",
+  "description": "Some GitHub Issues improvements, notably hide upvote comments (+1's) when browsing project issues in Github",
+  "content_scripts": 
+  [
+    {
+      "matches": ["https://github.com/*/*/issues/*"],
+      "js": ["jquery-2.0.3.js", "content_script.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
